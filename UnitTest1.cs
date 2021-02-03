@@ -44,8 +44,8 @@ namespace unittests
             var response = client.Execute(request);
             Console.WriteLine(response.Content);
         }
-        [DataRow(99,"Mark1")]
-        [DataRow(100, "Carl1")]
+        [DataRow("99","Mark1")]
+        [DataRow("100", "Carl1")]
         [DataTestMethod]
         private static void PutItem(int id, string data)
         {
@@ -56,8 +56,8 @@ namespace unittests
             var response = client.Execute(request);
             Console.WriteLine(response.Content);
         }
-        [DataRow(100)]
-        [DataRow(99)]
+        [DataRow("100")]
+        [DataRow("99")]
         [DataTestMethod]
         private static void DeleteItem(int id)
         {
